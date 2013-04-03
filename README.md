@@ -13,6 +13,7 @@ Simply add the CMS library to your library folder, register the namespace CMS_.
 Create a plugin to launch the orm parser. 
 
 ```
+<?php
 class My_Controller_Plugin_Orm extends Zend_Controller_Plugin_Abstract
 {
     public function dispatchLoopStartup(Zend_Controller_Request_Abstract $request)
@@ -49,6 +50,7 @@ class My_Controller_Plugin_Orm extends Zend_Controller_Plugin_Abstract
 __Entity__ tells CMS_Orm that your class is an entity  
 You can omit the table name, in this case, the last fragment (_) of the class name will be used.
 ```
+<?php
 /**
  * @Entity(table=users)
  */
@@ -99,6 +101,7 @@ __Id__ will set this column as primary key
 
 ### Example ###
 ```
+<?php
 /**
  * @Entity(table=users)
  */
